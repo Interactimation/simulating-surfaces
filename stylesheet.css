@@ -1,0 +1,10 @@
+/* hide auto-injected site title link */
+.markdown-body > h1 > a[href*="github.io/portfolio"] {
+  display: none;
+}
+
+
+main {
+  width: 75%;
+  max-width: 2000px;
+}
