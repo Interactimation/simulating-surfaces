@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+title: Overview
 ---
 
 # Models, Textures, Lights and Things that go SPLAT
