@@ -9,4 +9,4 @@ layout: default
 ## Table of Contents
 
 
-* [Overview of Course](overview.md)
+[Overview of Course](overview.md)
