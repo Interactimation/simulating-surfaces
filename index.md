@@ -10,3 +10,7 @@ layout: default
 
 
 [Overview of Course](overview.md)
+
+[Getting Started with Maya](getting_started.md)
+
+
