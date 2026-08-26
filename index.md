@@ -13,4 +13,7 @@ layout: default
 
 [Getting Started with Maya](getting_started.md)
 
+////
+
+END
 

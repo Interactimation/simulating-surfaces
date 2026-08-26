@@ -2,7 +2,7 @@
 
 Get Maya [FREE for students](https://www.autodesk.com/education/edu-software/overview) with .edu email address
 
-_As we generally have a wide range of skill and experience levels with Maya, my first goal is to gage each student's ability and facility with the program (or with self-instruction)_ 
+_As we generally have a wide range of skill and experience levels with Maya, my first goal is to gauge each student's ability and facility with the program (or with self-instruction)_ 
 
 Therefore, I give you: 
 
