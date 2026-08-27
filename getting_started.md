@@ -14,7 +14,7 @@ Therefore, I give you:
     * Yes you may choose another source and another texture but you need at least an
         * Image texture and a
         * Normal map 
-* Using Hypershade, apply the image texture to the sphere
+* Using Hypershade, apply _just the image texture_ to the sphere
 
 > This is due by class time Friday, when we will apply lighting and a normal map to the same sphere in order to show what normal maps are all about!
 
