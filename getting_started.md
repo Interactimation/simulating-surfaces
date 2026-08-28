@@ -32,7 +32,7 @@ I have gone to the trouble to dig up a complete set of introductory tutorials fo
 
 * Let me suggest the 5th video: [How to Create a Maya Project](https://www.youtube.com/watch?v=IeNvgiu7zbI&list=PLIJgfJkA78TQ&index=5), as we will want to organize our work this way, and I find many students are unaware of this functionality
 
-* Let me also suggest the 9th: [Maya Material Basics | Create & Assign Materials in Hypershade](https://www.youtube.com/watch?v=NMaZiwW3Jak&list=PLIJgfJkA78TQ&index=9), as this is one of the first things we'll do
+* Let me also suggest the 9th: [Maya Material Basics Create & Assign Materials in Hypershade](https://www.youtube.com/watch?v=NMaZiwW3Jak&list=PLIJgfJkA78TQ&index=9), as this is one of the first things we'll do
 
 > Consider playing _any_ of these videos at higher speeds. Other videos and content creators are available. **Find your gurus** 
 
