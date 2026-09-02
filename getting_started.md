@@ -1,3 +1,8 @@
+---
+layout: page
+title: Timeline
+---
+
 # Getting Started with Maya
 
 Get Maya [FREE for students](https://www.autodesk.com/education/edu-software/overview) with .edu email address

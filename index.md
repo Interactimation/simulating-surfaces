@@ -13,7 +13,5 @@ layout: default
 
 [Getting Started with Maya](getting_started.md)
 
-////
-
-END
+[Tiling Textures with UV Mapping (Intro)](uv_intro.md)
 
