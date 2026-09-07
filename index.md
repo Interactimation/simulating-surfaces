@@ -21,5 +21,5 @@ layout: default
 
 ### Maya Modeling
 
-[Extrude / Add Edge Loop](extrude_EdgeLopop.md) A rapid modeling approach
+[Extrude / Add Edge Loop](extrude_EdgeLoop.md) A rapid modeling approach
 
