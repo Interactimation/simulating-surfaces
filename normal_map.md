@@ -26,9 +26,8 @@ The normal map should use the same UVs as the Image Texture, so the two textures
 
 Select the new **File** texture node.
 
-Under **Color Space**, choose:
-
-`Raw`
+In the Inpector, under **Color Space**, choose:\
+Utilities ->`Raw`
 
 > Normal maps contain data rather than visible color, so they should not use an sRGB color transform.
 

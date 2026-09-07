@@ -11,9 +11,15 @@ layout: default
 
 [Overview of Course](overview.md)
 
+### Maya Textures and Maps
+
 [Getting Started with Maya](getting_started.md)
 
 [Normal Maps](normal_map.md)
 
 [Tiling Textures with UV Mapping (Intro)](uv_intro.md)
+
+### Maya Modeling
+
+[Extrude / Add Edge Loop](extrude_EdgeLopop.md) A rapid modeling approach
 
