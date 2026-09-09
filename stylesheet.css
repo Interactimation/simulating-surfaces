@@ -3,8 +3,20 @@
   display: none;
 }
 
-
+/* set main content width */
 main {
   width: 75%;
   max-width: 2000px;
+}
+
+/* proper indentation for lists */
+main ul,
+main ol {
+  padding-left: 2em;
+}
+
+/* nested lists */
+main li > ul,
+main li > ol {
+  padding-left: 2em;
 }
