@@ -23,3 +23,5 @@ layout: default
 
 [Extrude / Add Edge Loop](extrude_EdgeLoop.md) A rapid modeling approach
 
+[Create / Extrude an Arbitrary Polygon](extrude_arbitrary.md)
+
