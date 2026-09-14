@@ -29,11 +29,11 @@ If the resulting object is featureless black, it's normals may be facing the wro
 ## A Different Process Uses the Multi-Cut Tool
 
 * Create a Cube and scale it to tombstone proportions.
-* Go to Front View.
-* Use Mesh Tools → Multi-Cut to add several vertical/topology cuts near the upper part.
-Switch to Vertex mode.
-Move the upper vertices into an arch.
-Add more cuts if you need a smoother curve.
-Optionally Bevel the front/back perimeter edges slightly.
+* Go to top View.
+* Shift Right Click → Multi-Cut
+* Hold down Cntrl+Shift and click to make a single edge
 
-For a classic rounded top, I'd probably use a box with enough vertical divisions, then reshape the top vertices rather than literally cutting the entire silhouette away. It's easier to keep the mesh symmetrical and clean.
+Repeat this several times across the top
+
+You can then move the edges or their vertices into an arch
+Add more cuts if you need a smoother curve.
