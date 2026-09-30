@@ -31,8 +31,8 @@ layout: default
 
 # Unity
 
-[Preparing Maya scenes for Unity](Maya_scene_preparation_for_Unity.md)
-[Brining May a scenes into Unity](Unity_scene_setup_from_Maya.md)
+[Preparing Maya scenes for Unity](Maya_scene_preparation_for_Unity.md)\
+[Brining May scenes into Unity](Unity_scene_setup_from_Maya.md)
 
 Unity has its own light sources and some of them are obscure so we're interested in [Darkening Unity](Unity_completely_dark_scene.md)
 
