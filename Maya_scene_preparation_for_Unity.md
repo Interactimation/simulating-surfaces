@@ -31,8 +31,6 @@ Do not apply this cleanup to rigs, skinned meshes, or animated objects.
 2. Press **Ctrl+G**.
 3. Name the group `SCENE_ROOT`.
 
-To add an object later, select the object first, then Shift-select `SCENE_ROOT` in the Outliner and press **P**.
-
 Keep Maya lights as reference. Recreate lighting and materials in Unity; take a screenshot of the Maya scene if useful.
 
 ## 4. Create the folders inside your Unity project
