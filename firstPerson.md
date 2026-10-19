@@ -39,7 +39,7 @@
 
 2. **Create the script**
    - In the Project window, select your Assets folder.
-   - Assets → Create → Scripting → MonoBehaviour Script.
+   - In the Assets Folder: Right Click → Create → Scripting → MonoBehaviour Script.
    - Name it exactly `FirstPersonController`.
 
 3. **Paste the code**
