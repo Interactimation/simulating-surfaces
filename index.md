@@ -36,6 +36,8 @@ layout: default
 
 Unity has its own light sources and some of them are obscure so we're interested in [Darkening Unity](Unity_completely_dark_scene.md)
 
+Adding the [First Person "Player"](firstPerson.md)
+
 <!--Two more things we can do with our lights in Unity:
 [Animating lights, emissive materials and "bloom"](Unity_animated_lights_emission_bloom)-->
 
