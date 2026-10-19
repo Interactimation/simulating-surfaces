@@ -30,15 +30,10 @@
    - Set Rotation to `(0, 0, 0)`.
 
 5. **Save the scene**
-   - Your floor needs a collider.
+   - Check that your floor has a collider.
    - Next comes the script: movement, mouse look, and hiding the visor during play.
 
 ## Make the capsule controllable
-
-1. **Enable input**
-   - Edit → Project Settings → Player → Other Settings.
-   - Set **Active Input Handling** to **Both**.
-   - Restart Unity if prompted.
 
 > **NOTE:** the "Both" setting enables the input calls used here; the script (below) supplies gravity for the Character Controller
 
@@ -68,14 +63,14 @@
 
 ```csharp
 using UnityEngine;
+using UnityEngine.InputSystem; // Unity's new Input System.
 
-// Ensures this object has a Character Controller.
 [RequireComponent(typeof(CharacterController))]
 public class FirstPersonController : MonoBehaviour
 {
-    // These settings appear in the Inspector.
+    // Adjust these in Player's Inspector.
     public float moveSpeed = 4f;
-    public float lookSensitivity = 2f;
+    public float mouseSensitivity = 0.1f; // Degrees per pixel of mouse movement.
 
     private CharacterController controller;
     private Transform eyes;
@@ -84,57 +79,80 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        // Find the controller and the camera attached to Player.
+        // Find Player's controller and child camera.
         controller = GetComponent<CharacterController>();
         eyes = GetComponentInChildren<Camera>().transform;
 
         // Hide the capsule and visor during Play.
-        // This only hides their appearance; collision still works.
+        // Collision still works.
         foreach (Renderer part in GetComponentsInChildren<Renderer>())
             part.enabled = false;
     }
 
     void Update()
     {
-        // Escape releases the pointer; clicking captures it again.
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // Read devices through the new Input System.
+        var keyboard = Keyboard.current;
+        var mouse = Mouse.current;
+
+        // Skip input if either device is unavailable.
+        if (keyboard == null || mouse == null)
+            return;
+
+        // Escape releases the mouse.
+        if (keyboard.escapeKey.wasPressedThisFrame)
         {
             SetMouseLock(false);
             return;
         }
 
-        if (Input.GetMouseButtonDown(0))
-            SetMouseLock(true);
-
-        // Pause control while the mouse is released.
+        // Click to capture the mouse; begin control next frame.
         if (Cursor.lockState != CursorLockMode.Locked)
+        {
+            if (mouse.leftButton.wasPressedThisFrame)
+                SetMouseLock(true);
+
             return;
+        }
+
+        // Mouse movement is measured in pixels since the last frame.
+        // Do not multiply this by deltaTime.
+        Vector2 look = mouse.delta.ReadValue() * mouseSensitivity;
 
         // Turn the whole capsule left/right.
-        float turn = Input.GetAxis("Mouse X") * lookSensitivity;
-        transform.Rotate(0f, turn, 0f);
+        transform.Rotate(0f, look.x, 0f);
 
         // Tilt only the camera up/down; prevent flipping over.
-        pitch -= Input.GetAxis("Mouse Y") * lookSensitivity;
-        pitch = Mathf.Clamp(pitch, -85f, 85f);
+        pitch = Mathf.Clamp(pitch - look.y, -85f, 85f);
         eyes.localRotation = Quaternion.Euler(pitch, 0f, 0f);
 
-        // Read WASD / arrows and move relative to our facing direction.
-        Vector3 movement =
-            transform.right * Input.GetAxisRaw("Horizontal") +
-            transform.forward * Input.GetAxisRaw("Vertical");
+        // Read WASD and arrow keys.
+        float x = 0f;
+        float z = 0f;
 
-        // Prevent diagonal movement from being faster.
+        if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
+            x -= 1f;
+        if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
+            x += 1f;
+        if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed)
+            z += 1f;
+        if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)
+            z -= 1f;
+
+        // Move relative to the direction Player faces.
+        Vector3 movement = transform.right * x + transform.forward * z;
+
+        // Prevent faster diagonal movement.
         movement = Vector3.ClampMagnitude(movement, 1f) * moveSpeed;
 
-        // Apply gravity ourselves: Character Controller doesn't do it.
+        // Apply gravity ourselves.
         if (controller.isGrounded && verticalSpeed < 0f)
             verticalSpeed = -2f;
 
         verticalSpeed -= 9.81f * Time.deltaTime;
         movement.y = verticalSpeed;
 
-        // Move with collision; deltaTime makes speed independent of FPS.
+        // Move with collision, at the same speed regardless of FPS.
         controller.Move(movement * Time.deltaTime);
     }
 
@@ -149,7 +167,7 @@ public class FirstPersonController : MonoBehaviour
 
     void OnDisable()
     {
-        // Restore the pointer when this controller stops.
+        // Restore the pointer when the controller stops.
         SetMouseLock(false);
     }
 }
