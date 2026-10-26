@@ -3,6 +3,8 @@ layout: page
 title: Textures in Photoshop
 ---
 
+# Photoshop
+
 We can [create our own tileable image textures](https://www.youtube.com/watch?v=mQLXH3HpYik) in photoshop
 
 In class we'll attempt a more difficult tiling of brick textures, taken as something less than a 90˚ angle… and with a little ingenuity, we might be able to make our own Height or Bump Maps
