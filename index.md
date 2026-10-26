@@ -41,3 +41,10 @@ Adding the [First Person "Player"](firstPerson.md)
 <!--Two more things we can do with our lights in Unity:
 [Animating lights, emissive materials and "bloom"](Unity_animated_lights_emission_bloom)-->
 
+# Photoshop
+
+We can [create our own tileable image textures](https://www.youtube.com/watch?v=9_36YihB8I4) in photoshop
+
+In class we'll attempt a more difficult tiling of brick textures, taken as something less than a 90˚ angle…
+
+
