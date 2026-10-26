@@ -43,8 +43,6 @@ Adding the [First Person "Player"](firstPerson.md)
 
 # Photoshop
 
-We can [create our own tileable image textures](https://www.youtube.com/watch?v=mQLXH3HpYik) in photoshop
-
-In class we'll attempt a more difficult tiling of brick textures, taken as something less than a 90˚ angle…
+We can use [photoshop to generate seamless textures](texturePhotoshop.md) from photos
 
 

@@ -1,3 +1,8 @@
+---
+layout: page
+title: First Person Player
+---
+
 # First-person Player 
 
 ## Capsule Setup
