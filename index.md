@@ -8,7 +8,6 @@ layout: default
 
 ## Table of Contents
 
-
 [Overview of Course](overview.md)
 
 ### Maya Textures and Maps
