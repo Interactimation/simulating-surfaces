@@ -41,3 +41,24 @@ For looser textures like pebbles or stucco:
 9. Enable **View > Pattern Preview** and zoom out. Check for visible joins or obvious repeating patches; repair and check again.
 
 10. Save the **PSD**, then save a **PNG** at the same pixel dimensions.
+
+### Testing Tileability
+
+### Test a seamless tile in Photoshop
+
+1. Open your tile.
+2. Choose **Select > All**.
+3. Choose **Edit > Define Pattern**. Name it and click **OK**.
+4. Choose **File > New**. Make the image at least three times the tile’s width and height.
+   Example: 512 × 512 tile → 1536 × 1536 image.
+5. Choose **Edit > Fill**. Set **Contents** to **Pattern**.
+6. Under **Custom Pattern**, select your tile. Click **OK**.
+7. Inspect for visible seams, gaps, and obvious repetition. Check seams at **100% zoom**.
+8. After editing the original tile, define a new pattern and repeat the test.
+
+### Delete unused patterns
+
+1. Choose **Window > Patterns**.
+2. Select an unwanted pattern.
+3. Open the panel menu and choose **Delete Pattern**. Confirm.
+
