@@ -44,8 +44,6 @@ For looser textures like pebbles or stucco:
 
 ### Testing Tileability
 
-### Test a seamless tile in Photoshop
-
 1. Open your tile.
 2. Choose **Select > All**.
 3. Choose **Edit > Define Pattern**. Name it and click **OK**.
