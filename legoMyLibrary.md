@@ -19,7 +19,7 @@ THE GOAL IS CUTE, TOYLIKE, SIMPLE, APPEALING
 
 ------
 
-# Maya Refresher: Materials and Modeling
+## Maya Refresher: Materials and Modeling
 
 Use the **Modeling** menu set and polygon primitives with their default UVs.
 Press **6** over the viewport to display textures.
