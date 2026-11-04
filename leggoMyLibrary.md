@@ -1,3 +1,8 @@
+---
+layout: page
+title: Lego Library
+---
+
 # Lego my Library
 
 The assignment is to create a "toy" model, in Maya, of the Library.
