@@ -24,15 +24,15 @@ THE GOAL IS CUTE, TOYLIKE, SIMPLE, APPEALING
 Use the **Modeling** menu set and polygon primitives with their default UVs.
 Press **6** over the viewport to display textures.
 
-## 1. Plain-color materials
+### 1. Plain-color materials
 
 1. Right-click the object → **Assign New Material → Lambert**.
 2. In the **Attribute Editor**, rename the material.
 3. Click the **Color** swatch and choose a color.
 
-## 2. Tileable images and height maps
+### 2. Tileable images and height maps
 
-### Add the color image
+#### Add the color image
 
 1. Create and assign a new **Lambert**, as above.
 2. Click the checker button beside **Color** → **File**.
@@ -40,7 +40,7 @@ Press **6** over the viewport to display textures.
 4. Open its **place2dTexture** tab. Set **Repeat UV** to, for example, **4, 4**. Higher values make smaller, more frequent tiles.
 5. Adjust **Rotate UV** and **Offset** if needed.
 
-### Add and adjust the height map
+#### Add and adjust the height map
 
 1. Right-click the object → **Material Attributes**.
 2. Click the checker beside **Bump Mapping** → **File**.
@@ -50,14 +50,14 @@ Press **6** over the viewport to display textures.
 6. In this image's **place2dTexture** tab, match the color image's **Repeat UV**, **Rotate UV**, and **Offset**.
 7. Return to **bump2d**. Start **Bump Depth** at **0.1** and adjust. A negative value reverses raised and recessed detail.
 
-## 3. Materials on individual faces
+### 3. Materials on individual faces
 
 1. Hold right-click over the object → **Face**.
 2. Select faces; **Shift-click** to add more.
 3. Right-click → **Assign Existing Material** → choose your material.
 4. Hold right-click → **Object Mode** when finished.
 
-## 4. Edge loops
+### 4. Edge loops
 
 1. Select the object → **Mesh Tools → Insert Edge Loop**.
 2. Click-drag an edge to position the loop; release to insert it.
@@ -65,7 +65,7 @@ Press **6** over the viewport to display textures.
 
 Loops continue through four-sided faces; triangles can stop them.
 
-## 5. Extruding faces
+### 5. Extruding faces
 
 1. Hold right-click over the object → **Face**; select the faces.
 2. Choose **Edit Mesh → Extrude**.
