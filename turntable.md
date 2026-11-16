@@ -1,3 +1,8 @@
+---
+layout: page
+title: Turntable
+---
+
 # Unity Turntable Camera
 
 1. Move **Main Camera** to one side of your object and slightly above it. The camera’s starting position sets the orbit radius and height.

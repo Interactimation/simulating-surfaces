@@ -1,3 +1,8 @@
+---
+layout: page
+title: Web Export
+---
+
 # Unity 6 WebGL to GitHub Pages
 
 1. Open **File > Build Profiles > Add Build Profile** and select **Web**. If prompted, click **Install with Unity Hub**, install **Web Build Support**, and reopen Unity.
