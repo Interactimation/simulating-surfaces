@@ -37,6 +37,12 @@ Unity has its own light sources and some of them are obscure so we're interested
 
 Adding the [First Person "Player"](firstPerson.md)
 
+[Turntable](turntable.md) (rotating the camera around an object)
+
+[Exporting for the web](webExp.md)
+
+[Post to Itch.io](itch.md)
+
 <!--Two more things we can do with our lights in Unity:
 [Animating lights, emissive materials and "bloom"](Unity_animated_lights_emission_bloom)-->
 
