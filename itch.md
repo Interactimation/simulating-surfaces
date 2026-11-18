@@ -1,3 +1,8 @@
+---
+layout: page
+title: Itch
+---
+
 ## Publish a Unity Game on itch.io for Browser Play
 
 Already have a Unity Web build? Start at step 4.
