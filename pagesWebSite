@@ -1,0 +1,31 @@
+---
+layout: page
+title: Pages Website
+---
+
+# Create a GitHub "Pages" Website
+
+# Getting Started with Github
+
+This workflow works on **Windows, Mac, and Chromebook** and requires no software installation.
+
+------
+
+## Create a GitHub Repository
+
+1. Go to [GitHub](https://github.com) and create a sign in (if you don't have one already!)
+2. Click **New repository**.
+3. Give the repository a name.
+4. Set it to **Public**.
+5. Check **Add a README file**.
+6. Click **Create repository**.
+
+### Create Your Web Page
+
+1. In the repository, click **Add file → Create new file**.
+1. Name the file:
+
+   `index.md`
+
+> Index will be the first page of your website. If you want to use this page to host your WebGL Unity output, lemme know!
+

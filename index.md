@@ -43,6 +43,8 @@ Adding the [First Person "Player"](firstPerson.md)
 
 [Post to Itch.io](itch.md)
 
+[Creating a "Pages" Website](pagesWebSite.md)
+
 <!--Two more things we can do with our lights in Unity:
 [Animating lights, emissive materials and "bloom"](Unity_animated_lights_emission_bloom)-->
 
@@ -51,3 +53,4 @@ Adding the [First Person "Player"](firstPerson.md)
 We can use [photoshop to generate seamless textures](texturePhotoshop.md) from photos
 
 
+# [Final Projects](legoMyLibrary.md)
