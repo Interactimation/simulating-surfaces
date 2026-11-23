@@ -43,14 +43,14 @@ Press **6** over the viewport to display textures.
 #### Add and adjust the height map
 
 1. Right-click the object → **Material Attributes**.
-2. In the Lambert material tab, expand Common Material Attributes.
-3. Click the checkerboard button beside Bump Mapping.
-4. In the Create Render Node window that opens, choose 2D Textures → File.
-3. In the **bump2d** tab, set **Use As** to **Bump**.
-4. Follow the connection arrow beside Bump Value to the File node. Click the folder icon beside Image Name and open the matching height image.
-5. Set **Color Space → Raw**; under **Color Balance**, enable **Alpha Is Luminance**.
-6. In this image's **place2dTexture** tab, match the color image's **Repeat UV**, **Rotate UV**, and **Offset**.
-7. Return to **bump2d**. Start **Bump Depth** at **0.1** and adjust. A negative value reverses raised and recessed detail.
+2. In the material tab, expand **Common Material Attributes** for Lambert, or **Geometry** for aiStandardSurface.
+3. Click the checkerboard button beside **Bump Mapping**.
+4. In the **Create Render Node** window, choose **2D Textures → File**. Three connected nodes appear: **bump2d**, **file**, and **place2dTexture**. Their numbers may vary.
+5. Click the **bump2d** tab → set **Use As → Bump**.
+6. Click the **file1** tab → click the folder beside **Image Name** and open the matching grayscale height image.
+7. Still in **file1**, set **Color Space → Raw**. Expand **Color Balance** and enable **Alpha Is Luminance**.
+8. Click the **place2dTexture2** tab → match the color image’s **Repeat UV**, **Rotate UV**, and **Offset**.
+9. Return to **bump2d**. Start **Bump Depth** at **0.1** and adjust. A negative value reverses raised and recessed detail.
 
 ### 3. Materials on individual faces
 
