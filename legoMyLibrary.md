@@ -43,7 +43,9 @@ Press **6** over the viewport to display textures.
 #### Add and adjust the height map
 
 1. Right-click the object → **Material Attributes**.
-2. Click the checker beside **Bump Mapping** → **File**.
+2. In the Lambert material tab, expand Common Material Attributes.
+3. Click the checkerboard button beside Bump Mapping.
+4. In the Create Render Node window that opens, choose 2D Textures → File.
 3. In the **bump2d** tab, set **Use As** to **Bump**.
 4. Follow the connection arrow beside **Bump Value** to the File node; load the matching height image under **Image Name**.
 5. Set **Color Space → Raw**; under **Color Balance**, enable **Alpha Is Luminance**.
