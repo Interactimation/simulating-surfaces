@@ -47,7 +47,7 @@ Press **6** over the viewport to display textures.
 3. Click the checkerboard button beside Bump Mapping.
 4. In the Create Render Node window that opens, choose 2D Textures → File.
 3. In the **bump2d** tab, set **Use As** to **Bump**.
-4. Follow the connection arrow beside **Bump Value** to the File node; load the matching height image under **Image Name**.
+4. Follow the connection arrow beside Bump Value to the File node. Click the folder icon beside Image Name and open the matching height image.
 5. Set **Color Space → Raw**; under **Color Balance**, enable **Alpha Is Luminance**.
 6. In this image's **place2dTexture** tab, match the color image's **Repeat UV**, **Rotate UV**, and **Offset**.
 7. Return to **bump2d**. Start **Bump Depth** at **0.1** and adjust. A negative value reverses raised and recessed detail.
